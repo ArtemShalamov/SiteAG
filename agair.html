@@ -3,7 +3,7 @@
 <html lang="ru-ru">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>AGLamp - AGSite</title>
+	<title>AGAir - AGSite</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="images\new logo png.png">
 
@@ -90,30 +90,92 @@
 
         <!-- single portfolio -->
 		<section class="single-portfolio background-white rounded padding-50 shadow-blue mt-0">
-            <h2 class="archive-header darkmode">AGLamp 1</h2>
+            <h2 class="archive-header darkmode">AGAir</h2>
             <!-- portfolio info -->
             <ul class="list-inline portfolio-info mb-0 mt-4">
-                <li class="list-inline-item"><i class="icon-calendar"></i>2020</li>
+                <li class="list-inline-item"><i class="icon-calendar"></i>2021</li>
             </ul>
             <div class="spacer" data-height="40"></div>
             
             <!-- portfolio image -->
-			<img style="border-radius: 10px;" src="images\AGL\AGL1\top-front-right.png" alt="Portfolio-title">
+			<img style="border-radius: 10px;" src="images/AGAir/agair_render_fhd_home.jpg" alt="Portfolio-title">
 
             <div class="spacer" data-height="40"></div>
 
-			<img style="border-radius: 10px;" src="images\AGL\AGL1\top-right-back.png" alt="Portfolio-title">
-
+			<div class="row">
+				<div class="col">
+					<img style="border-radius: 10px;" src="images/AGAir/agair_render_fhd_front.jpg" alt="Portfolio-title">
+				</div>
+				<div class="col">
+					<img style="border-radius: 10px;" src="images/AGAir/agair_render_fhd_right.jpg" alt="Portfolio-title">
+				</div>
+			</div>
+			
             <!-- portfolio content -->
             <div class="portfolio-content mt-5">
+				<h4 class="darkmode text-center">ВНИМАНИЕ! Это концепт! Прибор ещё не собран.</h3>
+				<div class="spacer" data-height="1"></div>
+
                 <h3 class="text-center darkmode">Обзор</h3>
-                <p>Лампа-ночник AGLamp 1 украсит любой вечер, благодаря разнообразным цветам освещения. Легким движением руки можно изменить цвет, подстраивая лампу под различные обстоятельства. Для просмотра спортивных соревнований можно установить более агрессивные яркие цвета, а для отдыха после работы можно включить комфортные лавандовые оттенки. Для обеспечения качественного освещения мы оборудовали лампу 64 светодиодами. Именно благодаря уровню исполнения светодиодов нам удалось добиться колоссального количество возможных оттенков и плавных переходов от одного цвета к другому. Лампа управляется сенсорной кнопкой, которая установлена сверху. Лампа считается неотъемлемым атрибутом интерьера любой спальной комнаты. Лампа обязательно впишется в интерьер вашего дома.<p>
-                <h3 class="text-center darkmode">Купить лампу</h3>
-                <p class="text-center">Лампа продается только на заказ, и заказать его вы можете ниже:</p>
+                <p>Измеритель ксчества воздуха AGAir сделан для измерения качества газа на предприятиях. Его можно использовать на фермах, для определения качества в загонах животных, или на заводах, для контроля вредности выбросов в атмосферу.
+				<br>Проект разработан для предмета "Технология"<p>
+				
 				<div class="spacer" data-height="20"></div>
-				<div class="text-center">
-					<a href="aglamp_order.html" class="btn-order text-center">Заказать лампу AGLamp 1</a>
+
+				<h3 class="text-center darkmode">Документы</h3>
+				<div class="spacer" data-height="15"></div>
+				<div class="row text-center">
+					<div class="col">
+						<a class="button" href="" target="_blank">Презинтация</a>
+					</div>
+					<div class="col">
+						<a class="button" href="" target="_blank">Доклад</a>
+					</div>
+					<div class="col">
+						<a class="button" href="" target="_blank">Страница в Notion</a>
+					</div>
 				</div>
+
+				<div class="spacer" data-height="20"></div>
+
+                <h3 class="text-center darkmode">Компоненты</h3>
+                <div class="table-responsive" style="width: auto;">
+        			<table class="table darkmode">
+           				<thead>
+             		    	<tr>
+                 	   			<th style="width: 180px;">Название компонента</th>
+                	    		<th style="width: 170px;">Для чего он</th>
+             	   			</tr>
+         		   		</thead>
+         		   		<tbody>
+             	        	<tr>
+								<td>Arduino NANO</td>
+                  				<td>"Мозги" устройства. Служат для обработки данных с датчиков.</td>
+                			</tr>
+                			<tr>
+								<td>Датчик MQ-2</td>
+                  				<td>Датчик загазовоности. <a href="https://radioprog.ru/post/737" target="_blank">Подробнее тут.</a></td>
+                			</tr>
+							<tr>
+								<td>Датчик MH-Z19</td>
+                  				<td>Датчик определения CO2 в воздухе. <a href="https://habr.com/ru/post/390327" target="_blank">Подробнее тут.</a></td>
+                			</tr>
+							<tr>
+								<td>Датчик DHT11</td>
+                  				<td>Датчик температуры и влажности. <a href="https://habr.com/ru/post/390327" target="_blank">Подробнее тут.</a></td>
+                			</tr>
+							<tr>
+								<td>Кнопка тактовая</td>
+                  				<td>Для перемещения по меню.</td>
+                			</tr>
+							<tr>
+								<td>Экран Nokia 5110</td>
+                  				<td>Для отображения меню.</td>
+                			</tr>
+            			</tbody>
+        			</table>
+    			</div>
+
                 <div class="spacer" data-height="20"></div>
 
                 <h3 class="text-center darkmode">Прошивки</h3>
@@ -129,16 +191,10 @@
          		   		</thead>
          		   		<tbody>
              	        	<tr>
-								<td>v1</td>
-                  				<td>23 Декабря 2020 г.</td>
-                    			<td>AGLamp_v1.hex<br></td>
-                    			<td><a href="https://yadi.sk/d/iDqUMbAxbm_bAg" target="_blank">Скачать</a></td>
-                			</tr>
-                			<tr>
-								<td>v2_L1</td>
-                  				<td>19 Февраля 2021 г.</td>
-                    			<td>AGLamp_v2_L1.hex<br></td>
-                    			<td><a href="https://disk.yandex.ru/d/ai2KnvHhfkeHHA" target="_blank">Скачать</a></td>
+								<td>-</td>
+                  				<td>-</td>
+                    			<td>Прошивок пока нет.<br></td>
+                    			<td><a target="_blank">Скачать</a></td>
                 			</tr>
             			</tbody>
         			</table>
