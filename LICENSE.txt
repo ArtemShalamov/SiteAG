@@ -1,7 +1,7 @@
 The license is made using MIT license    https://mit-license.org/
 __AG.license__ v.F1    https://shalamovartem.ml/license/f1
 
-Copyright (c) 2021 Shalamov Artem
+Copyright (c) 2022 Шаламов Артём
 
 en:
 This license allows persons who have received a copy of the data files and
