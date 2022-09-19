@@ -6,7 +6,7 @@
 body {
   color: #888;
   background-color: #F6F7FF;
-  font-family: "Montsserat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 14px;
   line-height: 1.7;
   overflow-x: hidden;
@@ -725,7 +725,7 @@ section.padding-60 {
   background: #FF5959;
   color: #FFF;
   padding: 6px 14px 4px;
-  border-radius: 30px;
+  border-radius: 0.5rem;
 }
 .portfolio-filter li:not(:last-child) {
   margin-right: 1.5rem;
@@ -1274,21 +1274,6 @@ section.padding-60 {
   border-radius: 0;
 }
 
-/* === Alert === */
-.alert {
-  padding: 15px;
-  margin-bottom: 20px;
-  border: 1px solid transparent;
-  border-radius: 15px;
-}
-
-.alert-dismissable .close, .alert-dismissible .close {
-  position: relative;
-  top: 0;
-  right: 0;
-  color: inherit;
-}
-
 /* === Pagination === */
 .pagination {
   display: inline-block;
@@ -1715,8 +1700,6 @@ section.padding-60 {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
-
 a.button {
   color: #fff; /* цвет текста */
   text-decoration: none; /* убирать подчёркивание у ссылок */
@@ -1726,5 +1709,95 @@ a.button {
   outline: none; /* убирать контур в Mozilla */
   border-radius: 10px;
 } 
-a.button:hover { background: rgb(232,95,76); } /* при наведении курсора мышки */
-a.button:active { background: rgb(152,15,0); } /* при нажатии */
+
+a.button:hover {  background: rgb(232,95,76); }
+
+a.button:active { background: rgb(152,15,0);  }
+
+.checkbox-cont {  display: flex; align-items: center; }
+
+.checkbox-cont label {  margin-bottom: 0; }
+
+.checkbox-google {	display: inline-block; height: 28px; line-height: 28px; margin-right: 10px;	position: relative;	vertical-align: middle;	font-size: 14px;	user-select: none;  }
+
+.checkbox-google .checkbox-google-switch {	display: inline-block;	width: 36px;	height: 14px;	border-radius: 20px;  position: relative;	top: 6px;	vertical-align: top;	background: #9f9f9f;	transition: .2s;}
+
+.checkbox-google .checkbox-google-switch:before {
+	content: '';
+	display: inline-block;	
+	width: 20px;	
+	height: 20px;
+	position: absolute;
+	top: -3px;
+	left: -1px;
+	background: rgb(0, 0, 0);
+	border-radius: 50%;
+	box-shadow: 0 3px 1px -2px rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12);
+	transition: .15s;		
+}
+.checkbox-google input[type=checkbox] {
+	display: block;	
+	width: 0;
+	height: 0;	
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.checkbox-google input[type=checkbox]:checked + .checkbox-google-switch { background: #9F9F9F; }
+
+.checkbox-google input[type=checkbox]:checked + .checkbox-google-switch:before {  background: #ffffff;	transform:translateX(18px); }
+
+.checkbox-google input[type="checkbox"]:not(:disabled) + .checkbox-google-switch {  cursor: pointer;	border-color: rgba(0, 0, 0, .3);  }
+
+.checkbox-google input[type="checkbox"]:not(:disabled):active + .checkbox-google-switch:before, 
+.checkbox-google input[type="checkbox"]:not(:disabled):focus + .checkbox-google-switch:before {
+	animation: checkbox-active-on 0.5s forwards linear;
+}
+@keyframes checkbox-active-on {
+	0% {
+		box-shadow: 0 0 0 0 rgba(212,212,212, 0);
+	}
+	99% {
+		box-shadow: 0 0 0 10px rgba(212,212,212, 0.5);
+	}
+}
+
+.checkbox-google input[type="checkbox"]:not(:disabled):checked:active + .checkbox-google-switch:before, 
+.checkbox-google input[type="checkbox"]:not(:disabled):checked:focus + .checkbox-google-switch:before {
+	animation: checkbox-active-off 0.5s forwards linear;
+}
+@keyframes checkbox-active-off {
+	0% {
+		box-shadow: 0 0 0 0 rgba(154,190,247, 0);
+	}
+	99% {
+		box-shadow: 0 0 0 10px rgba(201, 201, 201, 0.5);
+	}
+}
+
+.select-css { 
+  display: block; 
+  font-size: 16px; 
+  font-weight: 700; 
+  line-height: 1.3; 
+  padding: .6em 1.4em .5em .8em; width: 100%; 
+  max-width: 100%; 
+  box-sizing: border-box; 
+  border-radius: .5em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  border-color: #FF5959;
+
+  color: white;
+  background-color: #FF5959; 
+  } 
+
+.select-css:focus { 
+  box-shadow: 0 0 1px 3px #c24444;
+  box-shadow: 0 0 0 3px -moz-mac-focusring; 
+  color: white ;
+  outline: none; 
+} 
+
